@@ -1,0 +1,95 @@
+<h2>Choose a Visual Direction</h2>
+<p class="subtitle">Which overall aesthetic direction resonates with you? Click to select.</p>
+
+<div class="cards">
+  <!-- Option A: Cyberpunk / Neon Tech -->
+  <div class="card" data-choice="cyberpunk" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 50%, #0a1628 100%); padding: 24px; min-height: 200px; position: relative; overflow: hidden;">
+      <!-- Neon grid lines -->
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to top, rgba(0,255,255,0.1), transparent); border-bottom: 2px solid rgba(0,255,255,0.3);"></div>
+      <div style="position: absolute; bottom: 20px; left: 0; right: 0; height: 40px; background: linear-gradient(to top, rgba(0,255,255,0.05), transparent); border-bottom: 1px solid rgba(0,255,255,0.2);"></div>
+      <!-- Glowing text -->
+      <div style="font-family: monospace; color: #00ffff; font-size: 14px; text-shadow: 0 0 10px rgba(0,255,255,0.5); margin-bottom: 8px;">&gt; HELLO_WORLD</div>
+      <div style="font-family: monospace; color: #ff00ff; font-size: 11px; text-shadow: 0 0 8px rgba(255,0,255,0.5);">&gt; loading portfolio...</div>
+      <div style="font-family: monospace; color: #00ff88; font-size: 11px; text-shadow: 0 0 8px rgba(0,255,80,0.5); margin-top: 4px;">&gt; status: ONLINE ✓</div>
+      <!-- Floating particles -->
+      <div style="position: absolute; top: 20px; right: 20px; width: 4px; height: 4px; background: #00ffff; border-radius: 50%; box-shadow: 0 0 6px #00ffff;"></div>
+      <div style="position: absolute; top: 50px; right: 40px; width: 3px; height: 3px; background: #ff00ff; border-radius: 50%; box-shadow: 0 0 6px #ff00ff;"></div>
+      <div style="position: absolute; top: 35px; right: 15px; width: 2px; height: 2px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 6px #00ff88;"></div>
+      <!-- Horizontal scan line -->
+      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,255,0.03) 2px, rgba(0,255,255,0.03) 4px);"></div>
+    </div>
+    <div class="card-body">
+      <h3>A. 赛博朋克 / Cyberpunk Neon</h3>
+      <p>霓虹色彩、扫描线特效、故障艺术(Glitch)、粒子动画。深色背景 + 荧光色点缀，极致科技感。</p>
+      <div style="margin-top: 8px;">
+        <span style="background: #0a0a1a; color: #00ffff; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #00ffff33;">暗黑</span>
+        <span style="background: #0a0a1a; color: #ff00ff; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #ff00ff33;">炫酷</span>
+        <span style="background: #0a0a1a; color: #00ff88; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #00ff8833;">极客</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option B: Minimal Glass / Modern -->
+  <div class="card" data-choice="glassmorphism" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 24px; min-height: 200px; position: relative; overflow: hidden;">
+      <!-- Glassmorphism cards -->
+      <div style="position: absolute; top: 15px; left: 15px; right: 60px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 12px; padding: 12px; border: 1px solid rgba(255,255,255,0.2);">
+        <div style="width: 60%; height: 8px; background: rgba(255,255,255,0.4); border-radius: 4px; margin-bottom: 6px;"></div>
+        <div style="width: 80%; height: 6px; background: rgba(255,255,255,0.25); border-radius: 3px; margin-bottom: 4px;"></div>
+        <div style="width: 45%; height: 6px; background: rgba(255,255,255,0.25); border-radius: 3px;"></div>
+      </div>
+      <div style="position: absolute; bottom: 20px; right: 15px; width: 50px; height: 50px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border-radius: 50%; border: 1px solid rgba(255,255,255,0.3);"></div>
+      <div style="position: absolute; top: 80px; right: 30px; width: 30px; height: 30px; background: rgba(255,255,255,0.15); border-radius: 50%;"></div>
+      <!-- Soft light orbs -->
+      <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: rgba(255,200,100,0.3); border-radius: 50%; filter: blur(30px);"></div>
+      <div style="position: absolute; bottom: -10px; left: -10px; width: 80px; height: 80px; background: rgba(100,200,255,0.2); border-radius: 50%; filter: blur(25px);"></div>
+    </div>
+    <div class="card-body">
+      <h3>B. 毛玻璃极简 / Glassmorphism</h3>
+      <p>半透明玻璃卡片、柔和渐变背景、大圆角、微妙的模糊效果。现代高端感，优雅精致。</p>
+      <div style="margin-top: 8px;">
+        <span style="background: #667eea22; color: #667eea; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #667eea44;">优雅</span>
+        <span style="background: #764ba222; color: #764ba2; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #764ba244;">高端</span>
+        <span style="background: #f093fb22; color: #c471ed; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #f093fb44;">现代</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option C: Terminal / Developer Portfolio -->
+  <div class="card" data-choice="terminal" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #1e1e2e; padding: 16px; min-height: 200px; border-radius: 8px; overflow: hidden;">
+      <!-- Terminal window chrome -->
+      <div style="display: flex; gap: 6px; margin-bottom: 12px;">
+        <div style="width: 10px; height: 10px; background: #ff5f57; border-radius: 50%;"></div>
+        <div style="width: 10px; height: 10px; background: #febc2e; border-radius: 50%;"></div>
+        <div style="width: 10px; height: 10px; background: #28c840; border-radius: 50%;"></div>
+        <span style="color: #6c7086; font-size: 11px; margin-left: 8px; font-family: monospace;">xiaoyu@portfolio ~ %</span>
+      </div>
+      <!-- Terminal content -->
+      <div style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.6;">
+        <div><span style="color: #89b4fa;">xiaoyu@portfolio</span> <span style="color: #a6e3a1;">~</span> $ cat about.json</div>
+        <div style="color: #cdd6f4; margin-top: 4px;">{</div>
+        <div style="color: #cdd6f4;">&nbsp;&nbsp;<span style="color: #89b4fa;">"name"</span>: <span style="color: #a6e3a1;">"Xiaoyu Liu"</span>,</div>
+        <div style="color: #cdd6f4;">&nbsp;&nbsp;<span style="color: #89b4fa;">"role"</span>: <span style="color: #a6e3a1;">"Full-Stack Developer"</span>,</div>
+        <div style="color: #cdd6f4;">&nbsp;&nbsp;<span style="color: #89b4fa;">"projects"</span>: <span style="color: #fab387;">12</span>,</div>
+        <div style="color: #cdd6f4;">}</div>
+        <div style="margin-top: 8px;"><span style="color: #89b4fa;">xiaoyu@portfolio</span> <span style="color: #a6e3a1;">~</span> $ <span style="animation: blink 1s infinite;">_</span></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. 终端风格 / Terminal Developer</h3>
+      <p>模拟命令行界面、代码高亮色彩(Catppuccin/Dracula)、打字机动画。开发者身份的极致表达。</p>
+      <div style="margin-top: 8px;">
+        <span style="background: #1e1e2e; color: #89b4fa; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #89b4fa44;">开发者</span>
+        <span style="background: #1e1e2e; color: #a6e3a1; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #a6e3a144;">硬核</span>
+        <span style="background: #1e1e2e; color: #fab387; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #fab38744;">个性</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px; padding: 16px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+  <h3 style="font-size: 14px; margin-bottom: 8px;">Remember: 这是选择视觉方向</h3>
+  <p style="font-size: 13px; opacity: 0.7;">选择后，其他风格仍会作为可切换主题存在。这只是决定默认风格和设计基调。你可以在浏览器中点击选择，或在终端告诉我你的想法。</p>
+</div>
